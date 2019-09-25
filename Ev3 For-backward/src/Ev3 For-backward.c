@@ -13,6 +13,7 @@ int main(void)
 
 	InitEV3();
 moving();
+
 	//TODO Place here your code
 	FreeEV3();
 	return 0;
@@ -43,4 +44,5 @@ int moving()
 	LcdPrintf(1,"Use the hand\n");
 	RotateMotor(OUT_C,10,45);
 	Wait(SEC_1);
+	return 0;
 }

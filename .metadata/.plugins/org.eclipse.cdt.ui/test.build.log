@@ -1,0 +1,25 @@
+16:18:09 **** Build of configuration Debug for project test ****
+cs-make all 
+'Building file: ../src/test.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/test.d" -MT"src/test.d" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: test.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"test.map" -o "test.elf"  ./src/test.o   -lev3api -lm
+'Finished building target: test.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "test.elf"  "test.hex"
+'Finished building: test.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31164	   9948	  11064	  52176	   cbd0	test.elf
+'Finished building: test.siz'
+' '
+
+16:18:10 Build Finished (took 1s.48ms)
+

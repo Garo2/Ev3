@@ -68,3 +68,878 @@ arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char
 arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
 arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
 cs-make: *** [Ev3 For-backward.elf] Error 1
+15:53:22 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:53:27 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building file: ../src/Ev3 For-backward.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/Ev3 For-backward.d" -MT"src/Ev3\ For-backward.d" -c -o "src/Ev3 For-backward.o" "../src/Ev3 For-backward.c"
+../src/Ev3 For-backward.c: In function 'main':
+../src/Ev3 For-backward.c:15: warning: implicit declaration of function 'moving'
+../src/Ev3 For-backward.c: In function 'moving':
+../src/Ev3 For-backward.c:46: warning: control reaches end of non-void function
+'Finished building: ../src/Ev3 For-backward.c'
+' '
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+16:18:05 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+16:18:09 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+16:18:09 **** Build of configuration Debug for project test ****
+cs-make all 
+'Building file: ../src/test.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/test.d" -MT"src/test.d" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: test.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"test.map" -o "test.elf"  ./src/test.o   -lev3api -lm
+'Finished building target: test.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "test.elf"  "test.hex"
+'Finished building: test.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31164	   9948	  11064	  52176	   cbd0	test.elf
+'Finished building: test.siz'
+' '
+12:13:23 **** Incremental Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building file: ../src/Ev3 For-backward.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/Ev3 For-backward.d" -MT"src/Ev3\ For-backward.d" -c -o "src/Ev3 For-backward.o" "../src/Ev3 For-backward.c"
+../src/Ev3 For-backward.c: In function 'main':
+../src/Ev3 For-backward.c:15: warning: implicit declaration of function 'moving'
+'Finished building: ../src/Ev3 For-backward.c'
+' '
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+12:13:57 **** Incremental Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:32:41 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:32:46 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building file: ../src/Ev3 For-backward.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/Ev3 For-backward.d" -MT"src/Ev3\ For-backward.d" -c -o "src/Ev3 For-backward.o" "../src/Ev3 For-backward.c"
+../src/Ev3 For-backward.c: In function 'main':
+../src/Ev3 For-backward.c:17: warning: implicit declaration of function 'moving'
+'Finished building: ../src/Ev3 For-backward.c'
+' '
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:32:48 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31164	   9948	  11064	  52176	   cbd0	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:44:15 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:44:16 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:44:19 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:44:19 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31244	   9948	  11064	  52256	   cc20	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:45:15 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:45:15 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:45:18 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:45:18 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31244	   9948	  11064	  52256	   cc20	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:45:51 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:45:51 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:45:54 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:45:54 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:46:20 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:46:20 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:46:21 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:46:22 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:48:33 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:48:33 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:48:34 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:48:35 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:49:04 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:49:04 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:49:05 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:49:05 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:49:41 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:49:41 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:49:44 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:49:45 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:50:15 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:50:16 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:50:17 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:50:17 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+14:51:13 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:51:14 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:51:15 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:51:16 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+../src/rotate.c: In function 'main':
+../src/rotate.c:22: error: 'SEC_32' undeclared (first use in this function)
+../src/rotate.c:22: error: (Each undeclared identifier is reported only once
+../src/rotate.c:22: error: for each function it appears in.)
+cs-make: *** [src/rotate.o] Error 1
+14:51:45 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+14:51:45 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+14:51:46 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+14:51:47 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:04:33 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:04:33 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:04:34 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:04:35 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31228	   9948	  11064	  52240	   cc10	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:04:53 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:04:53 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:04:54 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:04:55 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:05:57 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:05:57 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:05:59 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:06:00 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:06:39 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:06:40 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:06:43 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:06:43 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:08:23 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:08:23 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:08:23 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:08:24 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31224	   9948	  11064	  52236	   cc0c	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:12:56 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:12:56 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:12:57 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:12:58 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31228	   9948	  11064	  52240	   cc10	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:13:58 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:13:59 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:14:00 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:14:00 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31228	   9948	  11064	  52240	   cc10	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:17:19 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:17:19 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:17:21 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:17:21 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31228	   9948	  11064	  52240	   cc10	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:21:52 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:21:53 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:22:08 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:22:08 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:22:09 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:22:10 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31424	   9948	  11064	  52436	   ccd4	rotate.elf
+'Finished building: rotate.siz'
+' '
+15:26:39 **** Clean-only build of configuration Debug for project Ev3 For-backward ****
+cs-make clean 
+cs-rm -rf  ./src/Ev3\ For-backward.o  Ev3\ For-backward.hex  Ev3\ For-backward.siz  ./src/Ev3\ For-backward.d  "Ev3 For-backward.elf"
+' '
+15:26:39 **** Clean-only build of configuration Debug for project rotate ****
+cs-make clean 
+cs-rm -rf  ./src/rotate.o  rotate.hex  rotate.siz  ./src/rotate.d  rotate.elf
+' '
+15:26:41 **** Build of configuration Debug for project Ev3 For-backward ****
+cs-make all 
+'Building target: Ev3 For-backward.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
+arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
+cs-make: *** [Ev3 For-backward.elf] Error 1
+15:26:41 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31680	   9948	  11064	  52692	   cdd4	rotate.elf
+'Finished building: rotate.siz'
+' '

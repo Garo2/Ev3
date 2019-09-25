@@ -1,0 +1,25 @@
+15:26:41 **** Build of configuration Debug for project rotate ****
+cs-make all 
+'Building file: ../src/rotate.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/rotate.d" -MT"src/rotate.d" -c -o "src/rotate.o" "../src/rotate.c"
+'Finished building: ../src/rotate.c'
+' '
+'Building target: rotate.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"rotate.map" -o "rotate.elf"  ./src/rotate.o   -lev3api -lm
+'Finished building target: rotate.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "rotate.elf"  "rotate.hex"
+'Finished building: rotate.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31680	   9948	  11064	  52692	   cdd4	rotate.elf
+'Finished building: rotate.siz'
+' '
+
+15:26:42 Build Finished (took 1s.2ms)
+

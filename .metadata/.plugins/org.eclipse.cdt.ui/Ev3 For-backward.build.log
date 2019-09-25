@@ -1,10 +1,5 @@
-10:39:55 **** Build of configuration Debug for project Ev3 For-backward ****
+15:26:41 **** Build of configuration Debug for project Ev3 For-backward ****
 cs-make all 
-'Building file: ../src/Ev3 For-backward.c'
-'Invoking: Cross ARM C Compiler'
-arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/Ev3 For-backward.d" -MT"src/Ev3\ For-backward.d" -c -o "src/Ev3 For-backward.o" "../src/Ev3 For-backward.c"
-'Finished building: ../src/Ev3 For-backward.c'
-' '
 'Building target: Ev3 For-backward.elf'
 'Invoking: Cross ARM C Linker'
 arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
@@ -12,5 +7,5 @@ arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
 arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
 cs-make: *** [Ev3 For-backward.elf] Error 1
 
-10:39:55 Build Finished (took 618ms)
+15:26:41 Build Finished (took 316ms)
 
