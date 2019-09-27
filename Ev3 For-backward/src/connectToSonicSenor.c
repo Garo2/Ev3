@@ -4,7 +4,7 @@ int main() {
     int indexTid = findMinDistance();
 
     for(int i; i < indexTid; i++) {
-        rotateMotor();
+        rotateMotor(i);
     }
 
     return 0;
