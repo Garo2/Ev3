@@ -1,0 +1,24 @@
+/*
+ \file		reb.c
+ \author	${user}
+ \date		${date}
+ \brief		Simple Hello World! for the Ev3
+*/
+
+#include <ev3.h>
+
+int main(void)
+{
+	//TODO Place here your variables
+
+	InitEV3();
+
+	//TODO Place here your code
+	LcdPrintf(1, "Hello Rebecca!\n");
+	Wait(SEC_2);
+	OnRevSync(OUT_AB,75);
+	Wait(SEC_9);
+
+	FreeEV3();
+	return 0;
+}

@@ -1,0 +1,22 @@
+15:52:32 **** Build of configuration Debug for project reb ****
+cs-make all 
+'Building file: ../src/reb.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/reb.d" -MT"src/reb.d" -c -o "src/reb.o" "../src/reb.c"
+../src/reb.c: In function 'main':
+../src/reb.c:19: warning: implicit declaration of function 'readTouchSensor'
+../src/reb.c:26: error: 'stop' undeclared (first use in this function)
+../src/reb.c:26: error: (Each undeclared identifier is reported only once
+../src/reb.c:26: error: for each function it appears in.)
+../src/reb.c:26: error: expected ';' before '}' token
+../src/reb.c:29: warning: statement with no effect
+../src/reb.c:29: error: expected ';' before 'LcdPrintf'
+../src/reb.c:34: error: expected ';' before '}' token
+../src/reb.c:36: warning: implicit declaration of function 'backward'
+../src/reb.c:41: warning: implicit declaration of function 'rotation'
+../src/reb.c:50: warning: implicit declaration of function 'forward'
+../src/reb.c:54: warning: implicit declaration of function 'rotatemotor'
+cs-make: *** [src/reb.o] Error 1
+
+15:52:32 Build Finished (took 317ms)
+

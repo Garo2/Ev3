@@ -1,11 +1,35 @@
-15:26:41 **** Build of configuration Debug for project Ev3 For-backward ****
+15:52:30 **** Build of configuration Debug for project Ev3 For-backward ****
 cs-make all 
-'Building target: Ev3 For-backward.elf'
-'Invoking: Cross ARM C Linker'
-arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Ev3 For-backward.map" -o "Ev3 For-backward.elf"  ./src/Ev3\ For-backward.o   -lev3api -lm
-arm-none-linux-gnueabi-gcc: ./src/Ev3\: No such file or directory
-arm-none-linux-gnueabi-gcc: For-backward.o: No such file or directory
-cs-make: *** [Ev3 For-backward.elf] Error 1
+'Building file: ../src/connectToSonicSenor.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/connectToSonicSenor.d" -MT"src/connectToSonicSenor.d" -c -o "src/connectToSonicSenor.o" "../src/connectToSonicSenor.c"
+../src/connectToSonicSenor.c: In function 'main':
+../src/connectToSonicSenor.c:4: warning: implicit declaration of function 'findMinDistance'
+../src/connectToSonicSenor.c:6: error: 'for' loop initial declaration used outside C99 mode
+../src/connectToSonicSenor.c:7: warning: implicit declaration of function 'rotateMotor'
+../src/connectToSonicSenor.c: At top level:
+../src/connectToSonicSenor.c:13: warning: conflicting types for 'rotateMotor'
+../src/connectToSonicSenor.c:7: warning: previous implicit declaration of 'rotateMotor' was here
+../src/connectToSonicSenor.c: In function 'rotateMotor':
+../src/connectToSonicSenor.c:14: warning: implicit declaration of function 'LcdPrintf'
+../src/connectToSonicSenor.c:15: warning: implicit declaration of function 'OnFwdReg'
+../src/connectToSonicSenor.c:15: error: 'OUT_A' undeclared (first use in this function)
+../src/connectToSonicSenor.c:15: error: (Each undeclared identifier is reported only once
+../src/connectToSonicSenor.c:15: error: for each function it appears in.)
+../src/connectToSonicSenor.c:16: warning: implicit declaration of function 'Wait'
+../src/connectToSonicSenor.c:16: error: 'SEC_3' undeclared (first use in this function)
+../src/connectToSonicSenor.c:16: error: 'MS_700' undeclared (first use in this function)
+../src/connectToSonicSenor.c:16: error: 'MS_50' undeclared (first use in this function)
+../src/connectToSonicSenor.c: In function 'findMinDistance':
+../src/connectToSonicSenor.c:26: warning: implicit declaration of function 'setAllSensorMode'
+../src/connectToSonicSenor.c:26: error: 'TOUCH_PRESS' undeclared (first use in this function)
+../src/connectToSonicSenor.c:26: error: 'NO_SEN' undeclared (first use in this function)
+../src/connectToSonicSenor.c:26: error: 'US_DIST_MM' undeclared (first use in this function)
+../src/connectToSonicSenor.c:27: error: 'for' loop initial declaration used outside C99 mode
+../src/connectToSonicSenor.c:29: warning: implicit declaration of function 'readSensor'
+../src/connectToSonicSenor.c:29: error: 'IN_4' undeclared (first use in this function)
+../src/connectToSonicSenor.c:35: error: 'for' loop initial declaration used outside C99 mode
+cs-make: *** [src/connectToSonicSenor.o] Error 1
 
-15:26:41 Build Finished (took 316ms)
+15:52:31 Build Finished (took 326ms)
 

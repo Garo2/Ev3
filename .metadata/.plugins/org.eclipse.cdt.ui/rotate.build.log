@@ -1,4 +1,4 @@
-15:26:41 **** Build of configuration Debug for project rotate ****
+15:52:32 **** Build of configuration Debug for project rotate ****
 cs-make all 
 'Building file: ../src/rotate.c'
 'Invoking: Cross ARM C Compiler'
@@ -21,5 +21,5 @@ arm-none-linux-gnueabi-size --format=berkeley "rotate.elf"
 'Finished building: rotate.siz'
 ' '
 
-15:26:42 Build Finished (took 1s.2ms)
+15:52:33 Build Finished (took 890ms)
 

@@ -1,0 +1,25 @@
+15:52:31 **** Build of configuration Debug for project Rebec ****
+cs-make all 
+'Building file: ../src/Rebec.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -IC:/ev3/API -MMD -MP -MF"src/Rebec.d" -MT"src/Rebec.d" -c -o "src/Rebec.o" "../src/Rebec.c"
+'Finished building: ../src/Rebec.c'
+' '
+'Building target: Rebec.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"Rebec.map" -o "Rebec.elf"  ./src/Rebec.o   -lev3api -lm
+'Finished building target: Rebec.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-linux-gnueabi-objcopy -O ihex "Rebec.elf"  "Rebec.hex"
+'Finished building: Rebec.hex'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-linux-gnueabi-size --format=berkeley "Rebec.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31248	   9948	  11064	  52260	   cc24	Rebec.elf
+'Finished building: Rebec.siz'
+' '
+
+15:52:32 Build Finished (took 851ms)
+

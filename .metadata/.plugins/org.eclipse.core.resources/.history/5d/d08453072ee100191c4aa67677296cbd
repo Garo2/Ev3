@@ -1,0 +1,20 @@
+/*
+ \file		Rebec.c
+ \author	${user}
+ \date		${date}
+ \brief		Simple Hello World! for the Ev3
+*/
+#include <ev3.h>
+
+task main() {
+    SetSensorTouch(IN_1);
+    while(true){
+        if(Sensor(IN_1) == 1) {
+            OnFwd(OUT_AC, 100);
+        }
+        else {
+            Off(OUT_AC);
+        }
+    }
+}
+

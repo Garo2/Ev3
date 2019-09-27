@@ -1,0 +1,11 @@
+15:52:33 **** Build of configuration Debug for project test arm ****
+cs-make all 
+'Building target: test arm.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-linux-gnueabi-gcc -mcpu=arm9 -marm -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -Xlinker --gc-sections -s -LC:/ev3/API -Wl,-Map,"test arm.map" -o "test arm.elf"  ./src/test\ arm.o   -lev3api -lm
+arm-none-linux-gnueabi-gcc: ./src/test\: No such file or directory
+arm-none-linux-gnueabi-gcc: arm.o: No such file or directory
+cs-make: *** [test arm.elf] Error 1
+
+15:52:33 Build Finished (took 276ms)
+

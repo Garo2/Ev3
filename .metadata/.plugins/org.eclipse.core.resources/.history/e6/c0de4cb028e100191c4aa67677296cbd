@@ -1,0 +1,32 @@
+/*
+ \file		Rebec.c
+ \author	${user}
+ \date		${date}
+ \brief		Simple Hello World! for the Ev3
+*/
+
+#include <ev3.h>
+
+int main(void)
+{
+	//TODO Place here your variables
+
+	InitEV3();
+
+	//TODO Place here your code
+	setAllSensorMode(TOUCH_PRESS, NO_SEN, TOUCH_PRESS, US_DIST_MM);
+
+		if(IN_3 == true)
+		{
+			LcdPrintf(2, "Hello World!\n");
+			Wait(SEC_2);
+		}
+		else {
+				LcdPrintf(2, "NOPE!\n");
+				Wait(SEC_2);
+		}
+
+
+	FreeEV3();
+	return 0;
+}
