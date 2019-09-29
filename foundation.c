@@ -43,6 +43,8 @@ int main() {
 			}
 		}*/
 
+
+//DETTA SKA EJ ÄNDRAS
     int indexTid = findMinDistance();
     int i;
 
