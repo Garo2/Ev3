@@ -12,12 +12,13 @@ int main() {
 	InitEV3();
 		/*
 		 --!!!--- TESTA TOUCH-SENSOR SAMTIDIGT SOM FORWARD ---!!!---
-		 	       	   DENNA KOD FUNKAR EJ!
+		 	       	   DENNA KOD FUNKAR EJ! snälla få den att funka:(</3
+				   
 		setAllSensorMode(TOUCH_PRESS, NO_SEN, TOUCH_PRESS, US_DIST_MM);
 		int rightSensor = readSensor(IN_1);
 		int leftSensor = readSensor(IN_3);
 
-		while (rightSensor && leftSensor == 0) {
+		while (rightSensor && leftSensor != 1) {
 		    LcdPrintf(1, "Going Forward!\n");
 		    OnRevSync(OUT_AB,30);
 
