@@ -101,7 +101,7 @@ int findMinDistance () {
     {
         if(minDis > arrayDis[k])
         {
-            //minDis = arrayDis[k];
+            minDis = arrayDis[k];
             indexTidForMinDis = k;
         }
     }
